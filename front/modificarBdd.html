@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion BDD</title>
+</head>
+<body>
+
+    <a href="index.html" class="atras"><img src="imagenes/atras.png" alt=""></a>
+
+    <h1> MODIFICAR </h1>
+
+    <header>
+
+        
+        <div class="contenedor" id="contenedor1">
+            <h2> AGREGAR </h2>
+            <form action="script.js" method="POST">
+                <input type="text" id="firstName">
+                <input type="text" id="lastName">
+                <input type="text" id="email">
+            </form>
+                <button class="enviar_boton" onclick="aniadirUsuario()"> ACCIONAR </button>
+        </div>    
+
+        <div class="contenedor">
+            <h2> MODIFICAR </h2>
+            <input type="text" id="firstName">
+            <input type="text" id="lastName">
+            <input type="text" id="email">
+            <button class="enviar_boton"> ACCIONAR </button>
+        </div>  
+
+        <div class="contenedor">
+            <h2> ELIMINAR </h2>
+            <input type="text" id="id">
+            <button class="enviar_boton"> ACCIONAR </button>
+        </div>  
+
+    </header>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    body{
+
+        user-select: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        width: 99%;
+        height: auto;
+        color: white;
+
+    }
+
+    textarea{
+        pointer-events: none;
+        width: 400px;
+        height: 200px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 4px solid white;
+        color: white;
+        width: 75%;
+        background-color: black;
+        font-weight: bolder;
+        margin: 2% auto;
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+
+    h1{
+        text-align: center;
+        margin-top: 5%;
+        font-size: 10vh;
+    }
+
+    header{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        height: 400px;
+    }
+
+    .contenedor{
+        border-radius: 30px;
+        border: 4px solid white;
+        color: white;
+        background-color: rgb(199, 72, 72);
+        width: 350px;
+        min-height: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    form{
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        background-color: black;
+        cursor: pointer;
+        font-weight: bolder;
+        margin: 5% auto;
+        border-radius: 10px;
+        width: 500px;
+        height: 20px;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 4px solid white;
+        color: white;
+    }
+    
+    
+    button:hover{
+        background-color: rgb(26, 25, 25);
+    }
+
+    .atras{
+        position: absolute;
+        left: 2%;
+        top: 8%;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    input{
+        padding: 2%;
+        height: 20px;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border: 4px solid white;
+        color: white;
+        width: 65%;
+        background-color: black;
+        font-weight: bolder;
+        margin: 10px auto;
+        border-radius: 10px;
+        padding-left: 15px;
+    }
+    input:focus{
+        outline: none;
+        border: 4px solid rgb(207, 207, 207);
+    }
+
+    .enviar_boton{
+        width: 50%;
+        height: 14%;
+    }
+</style>
+
+<script>
+    
+</script>
