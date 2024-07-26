@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion BDD/ModificarBdd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styleTodos.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+
+    <a href="../index.html" class="atras"><img src="../imagenes/atras.png" alt=""></a>
+
+    <h1> MODIFICAR </h1>
+
+    <header>
+
+        <div class="contenedor" id="contenedor1">
+            <h2> AGREGAR </h2>
+            <form id="addUserForm">
+                <label for="Add_firstName" id="label_firstname">Nombre: </label>
+                <input type="text" id="Add_firstName">
+                <label for="Add_lastName" id="label_lastname">Apellido: </label>
+                <input type="text" id="Add_lastName">
+                <label for="Add_email" id="label_email">Mail:</label>
+                <input type="text" id="Add_email">
+                <button type="button" id="addUserButton" class="enviar_boton"> AGREGAR </button>
+            </form>
+        </div>    
+
+        <div class="contenedor">
+            <h2> MODIFICAR </h2>
+            <form id="modifyUserForm">
+                <label for="id_request" id="label_id">Id a modificar: </label>
+                <input type="text" id="id_request">
+                <label for="Modify_firstName" id="label_firstname">Nombre: </label>
+                <input type="text" id="Modify_firstName">
+                <label for="Modify_lastName" id="label_lastname">Apellido: </label>
+                <input type="text" id="Modify_lastName">
+                <label for="Modify_email" id="label_email">Mail:</label>
+                <input type="text" id="Modify_email">
+                <button type="button" class="enviar_boton" id="modifyUserButton"> MODIFICAR </button>
+            </form> 
+        </div>  
+
+        <div class="contenedor">
+            <h2> ELIMINAR </h2>
+            <form id="deleteUserForm">
+                <label for="Delete_id" id="label_id">Id a eliminar: </label>
+                <input type="text" id="Delete_id">
+                <button type="button" class="enviar_boton" id="deleteUserButton"> ELIMINAR </button>
+            </form>
+        </div>  
+
+    </header>
+
+</body>
+</html>

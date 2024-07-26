@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion BDD/ConsultarBdd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styleTodos.css">
+</head>
+<body>
+
+    <a href="../index.html" class="atras"><img src="../imagenes/atras.png" alt=""></a>
+
+    <h1> CONSULTAR </h1>
+
+    <header>
+        <div class="contenedor" id="contenedor1">
+            <h2> POR ID </h2>
+            <label for="id_request" id="label_id" >Id de usuario: </label>
+            <input type="text" id="PorId_id">
+            <button id="getUserButton" class="enviar_boton"> CONSULTAR </button>
+        </div>    
+
+        <div class="contenedor">
+            <h2> TODOS LOS <br> USUARIOS </h2>
+            <button class="enviar_boton" id="todosLosUsuarios"> CONSULTAR </button>
+        </div>  
+
+        <div class="contenedor">
+            <h2> RESULTADO </h2>
+            <textarea name="" id="resultado_jsonContent" readonly>  </textarea>
+        </div>  
+    </header>
+    <script src="script.js" defer></script>
+</body>
+</html>
