@@ -1,5 +1,5 @@
+// GET: getUser
 document.addEventListener('DOMContentLoaded', () => {
-    // GET: getUser
     async function obtenerUsuario(id_request){
         const query = await fetch("http://localhost:4000/api/getUser/" + id_request, {
             method: 'GET',
@@ -13,18 +13,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.getElementById('getUserButton').addEventListener('click', async () => {
-        const id_request = document.getElementById('PorId_id').value.trim();
-
-        if (id_request === "") {
-            document.getElementById('resultado_jsonContent').value = "No se ha ingresado un usuario";
-            return;
-        }
-
+        const id_request = document.getElementById('PorId_id').value;
         let data = await obtenerUsuario(id_request);
-        document.getElementById('resultado_jsonContent').value = JSON.stringify(data, null, 2);
+        if(document.getElementById('PorId_id').value === ""){
+            document.getElementById('resultado_jsonContent').value = "Ingrese algun ID para obtener un resultado";
+        } else {
+            document.getElementById('resultado_jsonContent').value = JSON.stringify(data, null, 2);
+            if(document.getElementById('resultado_jsonContent').value == "null"){
+            document.getElementById('resultado_jsonContent').value = "No se encontró ningún usuario con ese ID";
+            }
+        }
     });
+});
 
-    // GET: getUsers
+//GET: getUsers
+document.addEventListener('DOMContentLoaded', () => {
     async function obtenerUsuarios(){
         const query = await fetch("http://localhost:4000/api/getUsers", {
             method: 'GET',

@@ -22,7 +22,6 @@ document.getElementById('addUserButton').addEventListener('click', (event) => {
 });
 
 // PUT: modifyUser
-
 async function modifyUser(id_request, firstName, lastName, email) {
     const response = await fetch(`http://localhost:4000/api/modifyUser/${id_request}`, {
         method: 'PUT',
@@ -44,7 +43,6 @@ document.getElementById('modifyUserButton').addEventListener('click', () => {
 });
 
 // DELETE: deleteUser
-
 async function deleteUser(id) {
     const response = await fetch(`http://localhost:4000/api/deleteUser/${id}`, {
         method: 'DELETE',
