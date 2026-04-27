@@ -5,7 +5,7 @@ let aniadirUsuario = async() => {
     campos.lastName = document.getElementById("lastName").value;
     campos.email = document.getElementById("email").value;
 
-    const peticion = await fetch ("http://localhost:4000/api/addUser",
+    const peticion = await fetch ("https://apirest-7368.onrender.com/api/addUser",
         {
             method: "POST",
             headers: {

@@ -2,7 +2,7 @@
 
 // Función para simular la adición de un usuario
 async function addUser(firstName, lastName, email) {
-    const response = await fetch('http://localhost:4000/api/addUser', {
+    const response = await fetch('https://apirest-7368.onrender.com/api/addUser', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -23,7 +23,7 @@ document.getElementById('addUserButton').addEventListener('click', (event) => {
 
 // PUT: modifyUser
 async function modifyUser(id_request, firstName, lastName, email) {
-    const response = await fetch(`http://localhost:4000/api/modifyUser/${id_request}`, {
+    const response = await fetch(`https://apirest-7368.onrender.com/api/modifyUser/${id_request}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ document.getElementById('modifyUserButton').addEventListener('click', () => {
 
 // DELETE: deleteUser
 async function deleteUser(id) {
-    const response = await fetch(`http://localhost:4000/api/deleteUser/${id}`, {
+    const response = await fetch(`https://apirest-7368.onrender.com/api/deleteUser/${id}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json'

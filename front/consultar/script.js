@@ -1,7 +1,7 @@
 // GET: getUser
 document.addEventListener('DOMContentLoaded', () => {
     async function obtenerUsuario(id_request){
-        const query = await fetch("http://localhost:4000/api/getUser/" + id_request, {
+        const query = await fetch("https://apirest-7368.onrender.com/api/getUser/" + id_request, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //GET: getUsers
 document.addEventListener('DOMContentLoaded', () => {
     async function obtenerUsuarios(){
-        const query = await fetch("http://localhost:4000/api/getUsers", {
+        const query = await fetch("https://apirest-7368.onrender.com/api/getUsers", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
