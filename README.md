@@ -7,6 +7,8 @@ Aplicación web CRUD para la gestión de usuarios, compuesta por:
 
 La web permite consultar, crear, modificar y eliminar usuarios mediante peticiones HTTP al backend.
 
+Video Demostracion: https://www.youtube.com/watch?v=L6rkukv9QuE
+
 ## Tecnologías
 
 - Java 17
