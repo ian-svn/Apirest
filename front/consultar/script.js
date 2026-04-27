@@ -1,6 +1,5 @@
-// GET: getUser
-
 document.addEventListener('DOMContentLoaded', () => {
+    // GET: getUser
     async function obtenerUsuario(id_request){
         const query = await fetch("http://localhost:4000/api/getUser/" + id_request, {
             method: 'GET',
@@ -14,15 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.getElementById('getUserButton').addEventListener('click', async () => {
-        const id_request = document.getElementById('PorId_id').value;
+        const id_request = document.getElementById('PorId_id').value.trim();
+
+        if (id_request === "") {
+            document.getElementById('resultado_jsonContent').value = "No se ha ingresado un usuario";
+            return;
+        }
+
         let data = await obtenerUsuario(id_request);
         document.getElementById('resultado_jsonContent').value = JSON.stringify(data, null, 2);
     });
-});
 
-//GET: getUsers
-
-document.addEventListener('DOMContentLoaded', () => {
+    // GET: getUsers
     async function obtenerUsuarios(){
         const query = await fetch("http://localhost:4000/api/getUsers", {
             method: 'GET',
