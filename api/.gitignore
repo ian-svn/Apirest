@@ -31,3 +31,27 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Sensitive data / databases ###
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+
+### Database files ###
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+*.dump
+*.bak
+*.backup
+*.rdb
+
+### Local data folders ###
+data/
+db-data/
+backups/
